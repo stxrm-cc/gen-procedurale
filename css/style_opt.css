@@ -1,0 +1,225 @@
+/* Valeurs sont en VH (Viewport Height) pour assurer le bon fonction sur toute resolution */
+/* Importation/definition de la police qu'on utilisera pour l'entete */
+@font-face {
+  font-family: StayPixel;
+  src: url("../fonts/StayPixel.ttf"); }
+
+@font-face {
+  font-family: ANDYB;
+  src: url("../fonts/ANDYB.TTF"); }
+
+/* Proprietes qui vont s'appliquer a la page entiere */
+* {
+  transition-property: all;
+  transition-duration: .6s;
+  transition-timing-function: ease; }
+
+/* Partie "corps" du site et ses proprietes */
+body {
+  /* Partie qui prepare l'animation pour la transition "fadeIn" qui fait apparaitre la page */
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background-image: url("../img/bg.jpg"); }
+
+/* Empeche le selectionnement de texte pour ne pas gacher l'"esthetique" */
+.disable-select {
+  user-select: none;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */ }
+
+/* partie sections */
+.sections {
+  margin-top: 0vh !important; }
+
+/* Partie entete/titre (ID) */
+.header {
+  position: absolute;
+  cursor: default;
+  top: 12vh;
+  left: 44vh;
+  width: 11vh;
+  height: auto;
+  z-index: 1; }
+
+/* partie fond du titre */
+.world {
+  margin-left: -1%;
+  width: 101.4%;
+  height: 30vh;
+  background-image: url("../img/world.png");
+  background-repeat: repeat-x;
+  filter: blur(0rem);
+  z-index: 2; }
+
+/* partie entete/menu */
+.top-menu {
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  left: 0;
+  background-color: black;
+  display: inline-block;
+  z-index: 9999999; }
+
+/* partie texte du menu */
+.top-menu-text {
+  margin-left: 1%;
+  margin-top: 0.2%;
+  font-family: StayPixel;
+  font-size: 3vh;
+  cursor: default; }
+
+/* style du texte du menu */
+.top-menu-text > #accueil,
+#projet,
+#python,
+#scss,
+#opt {
+  color: #d6ffe4;
+  cursor: pointer !important; }
+  .top-menu-text > #accueil:hover,
+  #projet:hover,
+  #python:hover,
+  #scss:hover,
+  #opt:hover {
+    color: #268f49; }
+
+/* specification pour le style du curseur et couleur */
+#ignore {
+  color: black !important;
+  cursor: default !important; }
+
+/****** Partie container de la presentation du sujet ******/
+/* Partie top du conteneur de texte*/
+.grass_top {
+  position: relative;
+  background: url("../img/grass1.png");
+  height: 13px;
+  width: 103.52188vh; }
+
+/* Partie titre du conteneur de texte*/
+.grass_title {
+  position: relative;
+  background: url("../img/title1.jpg");
+  height: 44px;
+  width: 103.52188vh; }
+
+/* Partie interieure du conteneur de texte*/
+.grass_brown {
+  position: relative;
+  background: url("../img/brown1.jpg");
+  height: 400px;
+  width: 103.52188vh; }
+
+/* Partie bottom du conteneur de texte*/
+.grass_bottom {
+  position: relative;
+  background: url("../img/bottom1.png");
+  height: 1.7075773745997866vh;
+  width: 103.52188vh;
+  margin-bottom: 4%; }
+
+/****** Fin de la partie container presentation du sujet ******/
+/****** Partie container de l'objet du sujet ******/
+.optimisation_top {
+  margin-top: 5%;
+  margin-left: 2.3%;
+  width: 194.23692636072573vh;
+  height: 24px; }
+
+.optimisation_title {
+  width: 194.23692636072573vh;
+  height: 83px;
+  margin-left: 2.3%; }
+
+.optimisation_brown {
+  margin-top: -1%;
+  width: 194.23692636072573vh;
+  height: 1000px;
+  margin-left: 2.3%; }
+
+.optimisation_bottom {
+  width: 194.23692636072573vh;
+  height: 30px;
+  margin-left: 2.3%; }
+
+.optimisation_titre {
+  color: #d6ffe4;
+  margin-left: 2%;
+  font-family: StayPixel;
+  font-size: 8vh; }
+
+.optimisation_info {
+  position: relative;
+  font-size: 3vh;
+  color: #d6ffe4;
+  margin-left: 2%;
+  margin-right: 1.5%;
+  margin-top: 1%; }
+
+#optimisation_img1 {
+  position: absolute;
+  width: 37%;
+  height: auto;
+  margin-left: 60%;
+  margin-top: -8%;
+  border-radius: 0.5vh;
+  border-color: #268f49; }
+
+#optimisation_img2 {
+  position: absolute;
+  width: 37%;
+  height: 12vh;
+  margin-left: 2%;
+  margin-top: 7.5%;
+  border-radius: 0.5vh;
+  border-color: #268f49; }
+
+#optimisation_img3 {
+  position: absolute;
+  width: 37%;
+  height: auto;
+  margin-left: 60%;
+  margin-top: 19%;
+  border-radius: 0.5vh;
+  border-color: #268f49; }
+
+.optimisation_img_txt2 {
+  position: absolute !important;
+  margin-left: 35% !important;
+  margin-top: 9% !important; }
+
+.optimisation_img_txt3 {
+  position: absolute !important;
+  margin-left: -7.3% !important;
+  margin-top: 23% !important; }
+
+/****** Fin de la partie container de l'objet du sujet ******/
+/****** PARTIE SCROLLBAR ******/
+/* width */
+::-webkit-scrollbar {
+  width: 1vh; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.5336179295624333vh grey;
+  border-radius: 0.5vh; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 88, 86, 0.767);
+  border-radius: 0.5vh; }
+
+/****** FIN PARTIE SCROLLBAR ******/

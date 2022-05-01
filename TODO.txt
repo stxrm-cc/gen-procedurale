@@ -1,0 +1,7 @@
+commentaires
+
+pixels to vh
+
+z indexes 
+
+verifier que les elements restent coherents a la thematique de la page

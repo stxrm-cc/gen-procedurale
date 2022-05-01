@@ -1,0 +1,12 @@
+const version = document.getElementById('originale');
+const content = document.getElementById('python_content');
+
+function changeVersion() {
+    if (version.innerHTML == 'Version originale ici') {
+        version.innerHTML = 'Version traduite ici';
+        content.innerHTML = "<br>Beautiful is better than ugly.<br>Explicit is better than implicit.<br>Simple is better than complex.<br>Complex is better than complicated.<br>Flat is better than nested.<br>Sparse is better than dense.<br>Readability counts.<br>Special cases aren't special enough to break the rules.<br>Although practicality beats purity.<br>Errors should never pass silently.<br>Unless explicitly silenced.<br>In the face of ambiguity, refuse the temptation to guess.<br>There should be one —and preferably only one— obvious way to do it.<br>Although that way may not be obvious at first unless you're Dutch.<br>Now is better than never.<br>Although never is often better than <strong>right now</strong>.<br>If the implementation is hard to explain, it's a bad idea.<br>If the implementation is easy to explain, it may be a good idea.<br>Namespaces are one honking great idea — let's do more of those!<br><br>";
+    } else if (version.innerHTML == 'Version traduite ici') {
+        version.innerHTML = 'Version originale ici';
+        content.innerHTML = "<br>(Car) beau vaut mieux que laid. <br> Explicit vaut mieux qu'implicite.<br> Simple vaut mieux que complexe.<br> Complexe vaut mieux que compliqué.<br> Plat est mieux que imbriqué.<br> Clairsemé vaut mieux que dense.<br> La lisibilité compte.<br> Les cas spéciaux ne sont pas assez spéciaux pour enfreindre les règles.<br> Bien que l'aspect pratique l'emporte sur la pureté.<br> Les erreurs ne doivent jamais passer en silence.<br> A moins qu'ils ne soient explicitementréduits au silence.<br> Face à l'ambiguïté, refusez la tentation de deviner.<br> Il devrait y avoir un —et de préférence un seul— moyen évident de le faire.<br> Bien que cela puisse ne pas être évident au début, sauf sivous êtes néerlandais.<br> C'est mieux maintenant que jamais.<br> Bien que jamais soit souvent mieux que <strong>maintenant</strong>.<br> Si la mise en œuvre est difficile à expliquer, c'est une mauvaise idée.<br> Si la mise en œuvreest facile à expliquer, cela peut être une bonne idée.<br> Les espaces de noms sont une marveilleuse idée — faisons-en plus !<br><br>"
+    };
+};

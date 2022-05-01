@@ -1,0 +1,97 @@
+<!-- Garantit que le navigateur fait de son mieux pour suivre les specifications pertinentes -->
+<!DOCTYPE html>
+
+<!-- Debut partie HTML du dossier de projet -->
+<html lang="en" dir="ltr">
+
+<!-- Debut partie "tete" du site -->
+
+<head>
+    <!-- Partie qui n'affecte pas la partie "esthetique" de la page -->
+    <link rel="stylesheet" href="../css/style_python.css">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+    <!-- Titre de la page -->
+    <title> Python </title>
+    <!-- Fin -->
+    <!-- Importation des frameworks JS necessaires -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.2/TweenMax.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <!-- Fin -->
+    <!-- Fin -->
+</head>
+<!-- Fin partie "tete" du site -->
+
+<!-- Debut partie "corps" du site -->
+
+<body class="disable-select">
+    <!-- Separe le site en 2 sections distinctes -->
+
+    <div class="sections">
+        <!-- Partie section menu -->
+        <section id="menu">
+            <div class="top-menu">
+                <div class="top-menu-text">
+                    <span id="accueil" onclick="location='../index.html'"> ACCUEIL </span>
+                    <span id="ignore"> --------------------- </span>
+                    <span id="projet" onclick="location='projet.html'"> LE PROJET </span>
+                    <span id="ignore"> --------------------- </span>
+                    <span id="python" onclick="location='python.html'"> POURQUOI PYTHON? </span>
+                    <span id="ignore"> --------------------- </span>
+                    <span id="scss" onclick="location='scss.html'"> LE SCSS </span>
+                    <span id="ignore"> --------------------- </span>
+                    <span id="opt" onclick="location='opt.html'"> Optimisation </span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Debut partie texte se separant de l'entete "bot" -->
+        <section class="main-content">
+            <div class="bot-container">
+                <div class="python-container">
+                    <div class="grass_top python_top">
+                    </div>
+                    <header class="grass_title python_title">
+                        <div class="python_titre">
+                            mais Pourquoi UTILISER Python?
+                        </div>
+                    </header>
+                    <div class="grass_brown python_brown">
+                        <div class="python_info">
+                            <div id="python_content">
+                                <br> (Car) beau vaut mieux que laid. <br> Explicit vaut mieux qu'implicite.<br> Simple vaut mieux que complexe.<br> Complexe vaut mieux que compliqué.<br> Plat est mieux que imbriqué.<br> Clairsemé vaut mieux que dense.<br>                                La lisibilité compte.
+                                <br> Les cas spéciaux ne sont pas assez spéciaux pour enfreindre les règles.<br> Bien que l'aspect pratique l'emporte sur la pureté.<br> Les erreurs ne doivent jamais passer en silence.<br> A moins qu'ils ne soient explicitement
+                                réduits au silence.<br> Face à l'ambiguïté, refusez la tentation de deviner.<br> Il devrait y avoir un —et de préférence un seul— moyen évident de le faire.<br> Bien que cela puisse ne pas être évident au début, sauf si
+                                vous êtes néerlandais.<br> C'est mieux maintenant que jamais.<br> Bien que jamais soit souvent mieux que <strong>maintenant</strong>.<br> Si la mise en œuvre est difficile à expliquer, c'est une mauvaise idée.<br> Si la
+                                mise en œuvre est facile à expliquer, cela peut être une bonne idée.<br> Les espaces de noms sont une marveilleuse idée — faisons-en plus !<br>
+                                <br>
+                            </div>
+                            <br> <em> "The Zen of Python", </em> <span id="author" onclick="window.open('https://en.wikipedia.org/wiki/Tim_Peters_(software_engineer)')"> Tim Peters </span><br>
+                            <br><strong id="originale" onclick="changeVersion()">Version originale ici</strong>
+                        </div>
+                        <div class="python_logo">
+                            <img src="../img/logo-python.png" id="logo" alt="logo python">
+                        </div>
+                    </div>
+                    <div class="grass_bottom python_bottom">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin partie texte se separant de l'entete "bot" -->
+
+    </div>
+    <!-- Fin sections -->
+
+    <!-- Script JS place a la fin du "body" car il faut attendre pour que tous les elements soit charges -->
+    <script src="../js/raison.js" type="text/javascript"></script>
+
+</body>
+<!-- Fin partie "corps" du site -->
+
+
+</html>
+<!-- Fin partie HTML du dossier de projet -->
